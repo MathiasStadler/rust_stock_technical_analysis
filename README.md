@@ -22,4 +22,11 @@ cp src/main.rs examples/example.rs
 cargo add tokio --features full
 cargo add thirtyfour
 cargo update
+# spezial for these project
+cargo add ta
+cargo add csv
 ```
+
+## [crates.io ta](https://crates.io/crates/ta)
+
+cargo run --example ema
