@@ -12,6 +12,8 @@ cargo init .
 cargo add rustfmt
 sudo chmod -R 0777 /opt/rust
 rustup component add rustfmt
+rustup component add rust-src
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 mkdir examples
 cp src/main.rs examples/example.rs
 # not understood
