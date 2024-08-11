@@ -6,7 +6,7 @@ use ta::DataItem;
 use ta::Next;
 
 fn main() {
-    let mut ema = Sma::new(9).unwrap();
+    let mut sma = Sma::new(9).unwrap();
     let mut reader = csv::Reader::from_path("./data/stock_example.csv").unwrap();
 
     for record in reader.deserialize() {
